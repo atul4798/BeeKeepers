@@ -1,0 +1,2 @@
+length = input();
+print("value")

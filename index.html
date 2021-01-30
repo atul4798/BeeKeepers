@@ -1,0 +1,184 @@
+ <html>
+    <head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+        <title>BeeKeepers | Welcome</title>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="landing.css">
+        <link rel="stylesheet" type="text/css" href="codedude.ttf">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Kirang+Haerang" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        	<nav>
+        		<div class="menu-icon" id="home">
+        			<i class="fa fa-bars fa-2x"></i>
+        		</div>
+        		<div class="logo">
+        			BeeKeepers
+        		</div>
+        		<div class="menu">
+        			<ul>
+                        <li><a href="#abtus">About Us</a></li>
+                        <li><a href="index1.html" id="li_home">Register</a></li>
+                    </ul>
+        		</div>
+        	</nav>
+        	<div id="textbox">
+        		<h2>BeeKeepers</h2>
+        		<span id="sub-text">We provide solution to your problems</span>
+        		<a id="btn-get">Login</a>
+        	</div>
+        	
+        </header>
+
+        <!-- Footer 1 -->
+
+<footer class="footer-distributed" id="abtus">
+    <a id="seven"></a>
+            <div class="footer-left">
+
+                <h3>Bee<span>Keepers</span></h3>
+                <div class="footer-company-name">&copy; 2018 Copyright:
+                    <a href="#"> BeeKeepers.com</a>
+                </div>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Kanpur Uttar Pradesh</span>India</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 9554015622</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@beekeepers.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+            </div>
+
+        </footer>
+ <script type="text/javascript">
+            //menu toogle button
+            $(document).ready(function() {
+                $(".menu-icon").on("click",function() {
+                    $("nav ul").toggleClass("showing"); 
+                });
+            });
+            //scrolling effect
+            $(window).on("scroll",function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+                else {
+                    $('nav').removeClass('black');
+                }
+            })
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1200, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+        </script>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal" style="position: absolute;right: 3rem;">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form" action="main.py" method="get">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" name="phone" class="form-control" id="usrname" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" name="pass" id="psw" placeholder="Enter password">
+            </div>
+            <div class="radio">
+              <label><input type="radio" value="admin" name="depart">Admin</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <label><input type="radio" value="user" name="depart">User</label>
+            </div>
+            <div class="form-group"></div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $("#btn-get").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

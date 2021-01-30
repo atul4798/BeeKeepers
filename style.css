@@ -1,0 +1,579 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body { 
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: rgb(233, 236, 239);
+}
+header { 
+	width: 100vw;
+	height: 90vh;
+	background : url(head.jpg) 50% 50%;
+	background-size: cover;
+	display: flex;
+	background-attachment: fixed;
+	position: relative;
+
+}
+.content {
+	width: 90%;
+	margin: 4em auto;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify; 
+}
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+nav.black .logo {
+	color: red;
+	font-family: 'Do Hyeon', sans-serif;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	color: rgb(33, 37, 41);
+	z-index: 1030;
+	justify-content: space-between;
+
+}
+nav ul {
+	text-decoration: none;
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	transition: .5s;
+}
+nav.black ul {
+	background: #fff;
+}
+nav.black li a {
+	color: black;
+	text-decoration: none;
+}
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+nav ul li:last-child {
+	margin-left: 2rem;
+	margin-right: 3rem;
+	transform: translateX(-2rem);
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+nav ul li a:hover {
+	color: black;
+
+}
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color:#fff;
+	display: none;
+}
+@media(max-width: 580px) {
+	.logo {
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+	nav ul {
+		max-height: 0px;
+		background: #000;
+	}
+	nav.black ul {
+		background: #000;
+	}
+	.showing {
+		max-height: 20em;
+	}
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+	.menu-icon {
+		display: block;
+	}
+}
+#textbox {
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	text-align: center;
+}
+body header h2 {
+	font-size: 7rem;
+	margin: 0 auto;
+	margin-top: 10rem;
+	color: white;
+	text-align: center;
+	font-family: 'Do Hyeon', sans-serif;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	display: block;
+	position: relative;
+	top: 30%;
+    left: 30%;
+}
+
+#sub-text{
+	color: white;
+	text-align: center;
+	position: relative;
+	display: block;
+	margin-top: -.6rem;
+	font-size: 2.4rem;
+	font-family: 'Do Hyeon', sans-serif;
+	animation-name: moveInRight;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	top: 30%;
+    left: 30%;
+}
+#btn-get{
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	font-size: 1.6rem;
+	color: white;
+	border: 1px solid;
+	top: 30%;
+    left: 30%;
+}
+
+body header p {
+	display: inline;
+}
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translate(10rem)
+	}
+	80% {
+		transform: translate(-1rem)
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0rem)
+	}
+}
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem)
+	}
+	80% {
+		transform: translate(1rem)
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0rem)
+	}
+}
+
+#btn-get:hover{
+	color: rgb(36, 79, 158);
+}
+#content-title {
+	text-align: center;
+	font-weight: 2rem;
+	font-size: 5rem;
+	font-family: 'Do Hyeon', sans-serif;
+}
+#content-subtitle {
+	
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Do Hyeon', sans-serif;
+}
+.content2 {
+	width: 100%;
+	height: 100vh;
+	background : url(head.jpg) 50% 50%;
+	background-size: cover;
+	display: flex;
+	background-attachment: fixed;
+	position: relative;
+}
+/*
+#ul--gallery {
+	position: absolute;
+	width: 40%;
+	left: 4rem;
+	top: 4rem;
+	height: 80vh;
+	background: #ccc;
+}
+#ul--gallery li {
+	list-style: none;
+	position: relative;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #000;
+	float: left;
+	box-sizing: border-box;
+	text-align: center;
+	transition: 0.5s;
+}
+#ul--gallery li:hover {
+	width: 60%;
+}
+#ul--gallery:hover li {
+	width: 10%;
+}
+*/
+#services--title {
+	font-size: 6rem;
+	color: white;
+	display: block;
+	margin : 0 auto;
+	position: absolute;
+	font-family: 'Do Hyeon', sans-serif;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+
+/*
+Flipper
+*/
+
+.maincontainer{ 
+top:40%;
+left: 50%;
+width: 250px;
+height: 320px;
+margin: 20px;
+float: left;
+}
+
+.thecard{
+left: 35%;
+position: relative;
+top:45%;
+width: 250px;
+height: 320px;
+border-radius: 20px;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+}
+
+.thecard:hover{
+transform: rotateY(180deg);
+}
+
+.thefront{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+backface-visibility: hidden;
+overflow: hidden;
+color: #000;
+}
+
+.first{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+background: url(plumb.jpg) no-repeat ; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+.second{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+background: url(elect.jpg) no-repeat ; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+.third{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+background: url(maid.jpg) no-repeat ; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+.forth{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+background: url(dom.jpg) no-repeat ; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+.theback{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+backface-visibility: hidden;
+overflow: hidden;
+background: #3D7EAA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #333;
+text-align: center;
+transform: rotateY(180deg);    
+}
+.thefront h1, .theback h1{
+font-family: 'zilla slab', sans-serif;
+padding: 50px;
+font-weight: bold;
+font-size: 24px;
+text-align: center;
+color:coral;
+}
+.thefront p, .theback p{
+font-family: 'zilla slab', sans-serif;
+padding: 30px;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+color:forestgreen;
+}
+.button
+{
+width: 70%;
+background: #00bcd4;
+color:#fff;
+border-radius: 200px;
+border: 2;
+outline: none;
+height: 50px;
+font-size: 24px;
+}
+
+
+/*flipper ends*/
+
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+      float: left;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
